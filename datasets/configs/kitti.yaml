@@ -1,0 +1,11 @@
+# KITTI dataset
+
+num_classes: 8
+# train and val datasets (image directory or *.txt file with image paths)
+dataset_path: ./datasets/data/kitti
+train: ./datasets/data/kitti/ImageSets/train.txt
+val: ./datasets/data/kitti/ImageSets/val.txt
+test: ./datasets/data/kitti/ImageSets/test.txt
+brg_mean: [95.87739305, 98.76049672, 93.83309082]
+# class names
+names: ['Car', 'Van', 'Truck', 'Pedestrian','Person_sitting', 'Cyclist', 'Tram', 'Misc']

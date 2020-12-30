@@ -1,0 +1,24 @@
+batch_size: 64 # batch size of inputs
+lr0: 0.01  # initial learning rate (SGD=1E-2, Adam=1E-3)
+momentum: 0.937  # SGD momentum
+weight_decay: 0.0005  # optimizer weight decay
+giou: 0.05  # giou loss gain
+cls: 0.58  # cls loss gain
+cls_pw: 1.0  # cls BCELoss positive_weight
+obj: 1.0  # obj loss gain (*=img_size/320 if img_size != 320)
+obj_pw: 1.0  # obj BCELoss positive_weight
+iou_t: 0.20  # iou training threshold
+anchor_t: 4.0  # anchor-multiple threshold
+fl_gamma: 0.0  # focal loss gamma (efficientDet default is gamma=1.5)
+hsv_h: 0.014  # image HSV-Hue augmentation (fraction)
+hsv_s: 0.68  # image HSV-Saturation augmentation (fraction)
+hsv_v: 0.36  # image HSV-Value augmentation (fraction)
+degrees: 0.0  # image rotation (+/- deg)
+translate: 0.0  # image translation (+/- fraction)
+scale: 0.5  # image scale (+/- gain)
+shear: 0.0  # image shear (+/- deg)
+gr: 1.0 # giou loss ratio (obj_loss = 1.0 or giou)
+l1_smooth_beta: 0.1 # dim loss smooth beta
+conf: 1.0
+orient: 2.
+dim: 2.
