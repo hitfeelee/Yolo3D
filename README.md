@@ -5,7 +5,8 @@ such as change nn.Upsample to nn.ConvTranspose2d, and adjust Focus module in yol
 
 ## Quick Start
 ### datasets
-Applying kitt dataset. following cache reference to kitti_dev project.
+Applying kitt dataset. Place [kitti_dev](https://github.com/hitfee01/kitti_dev) sub contents to datasets/data/kitti/ of this project.
+
 Please place it as following:
 
     root
@@ -14,30 +15,31 @@ Please place it as following:
        |
        ---data
           |
-          ---cache
-             |
-             ---k_*.npy // list K of camera. * -> (train or test)
-             |
-             ---label_*.npy // list label. * -> (train or test) 
-             |
-             ---shape_*.npy // list size of images. * -> (train or test)
-          |
-          ---ImageSets
-             |
-             ---train.txt // list of training image.
-             |
-             ---test.txt // list of testing image.
-          ---testing
-          |
-          ---training
-             |
-             ---calib
-                |
-                ---calib_cam_to_cam.txt // camera calibration file for kitti
-             |
-             ---image_2
-             |
-             ---label_2
+          ---kitti
+              ---cache
+                 |
+                 ---k_*.npy // list K of camera. * -> (train or test)
+                 |
+                 ---label_*.npy // list label. * -> (train or test) 
+                 |
+                 ---shape_*.npy // list size of images. * -> (train or test)
+              |
+              ---ImageSets
+                 |
+                 ---train.txt // list of training image.
+                 |
+                 ---test.txt // list of testing image.
+              ---testing
+              |
+              ---training
+                 |
+                 ---calib
+                    |
+                    ---calib_cam_to_cam.txt // camera calibration file for kitti
+                 |
+                 ---image_2
+                 |
+                 ---label_2
           
 
 ### training
